@@ -1,0 +1,6 @@
+#Cek docker
+docker version
+#cek image yang sudah di download
+docker image ls
+#cara ambil image
+docker image pull <namanya>:tag / docker pull <namanya>:tag
