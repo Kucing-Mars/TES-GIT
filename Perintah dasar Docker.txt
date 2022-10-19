@@ -1,6 +1,8 @@
-#Cek docker
-docker version
+#Cek docker version daemon dan client
+    docker version
 #cek image yang sudah di download
-docker image ls
+    docker image ls
 #cara ambil image
-docker image pull <namanya>:tag / docker pull <namanya>:tag
+    docker image pull <namanya>:tag / docker pull <namanya>:tag
+#Menghapus docker image
+    docker image rm <namanya>:tag
