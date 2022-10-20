@@ -6,3 +6,15 @@
     docker image pull <namanya>:tag / docker pull <namanya>:tag
 #Menghapus docker image
     docker image rm <namanya>:tag
+#Melihat Container
+    docker container ls -a /docker container ls
+#Membuat container
+    docker container create --name <nama container> <namaimage:tag>
+#Menjalankan Container
+    docker container start <containerid/namacontainer>
+#Menghentikan container
+    docker container stop <containerid/namacontainer>
+#Menghapus container
+    docker container rm <containerid/namacontainer>
+#Melihat container logs
+    docker container logs <containerid/namacontainer> atau docker container logs -f <containerid/namacontainer> (-f = secara realtime setiap ada logs)
