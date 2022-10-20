@@ -18,3 +18,9 @@
     docker container rm <containerid/namacontainer>
 #Melihat container logs
     docker container logs <containerid/namacontainer> atau docker container logs -f <containerid/namacontainer> (-f = secara realtime setiap ada logs)
+#Masuk ke container
+    docker container exec -i -t <containerid/namacontainer> /bin/bash (-i= argument interaktif, menjaga input tetap aktif. -t= argument untuk alokasi pseudo-TTY (terminal akses).)
+#Melakukan Port Forwarding
+    docker container create --name <namacontainer> --publish porthost:portcontainer image:tag
+#Menambah Environment Variabel
+    docker container create --name <namacontainer> --env KEY='value' --env KEY2='value' image:tag
