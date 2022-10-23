@@ -30,3 +30,21 @@
     docker container create --name <namacontainer> --memory 100m --cpus 0.5 image:tag
 #Melakukan Mounting / sharing file
     docker container create --name <namacontainer> --mount "type=bind,source=folder(host),destination=folder(container),readonly(Optional)" image:latest
+#Melihat docker volume
+    Docker volume ls
+#Membuat docker volume
+    docker volume create <namavolume>
+#Menghapus docker volume
+    docker volume rm <namavolume>
+#Melihat network
+    docker network ls
+#Membuat network
+    docker network create --driver <namadriver> <namanetwork>
+#Menghapus network
+    docker network rm <namanetwork>
+#Membuat container dengan network
+    docker container create --name <namacontainer> --network <namanetwork> image:latest
+#Menghapus container dari network
+    docker network disconnect <namanetwork> <namacontainer>
+#Menambahkan container ke network
+    docker network connect <namanetwork> <namacontainer>
